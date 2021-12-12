@@ -579,8 +579,8 @@
 	  
 <script>
 	document.getElementById('submit_email').addEventListener('click',function(){
-	analytics.track("Form Sumbitted", {
-  email: ""
+	analytics.identify("Form Sumbitted", {
+  email: email
 });	
 	}, false);
 	  </script>
