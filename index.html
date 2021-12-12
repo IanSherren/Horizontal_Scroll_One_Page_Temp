@@ -495,7 +495,7 @@
 
           <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
             <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
-            <button type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
+            <button id="submit_email" type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
           </form>
 
           <a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a>
@@ -573,6 +573,14 @@
   label: "purchase",
   pricing_option: "Galaxy",
   price: "$24"
+});	
+	}, false);
+	  </script>
+	  
+<script>
+	document.getElementById('submit_email').addEventListener('click',function(){
+	analytics.identify("Form Sumbitted", {
+  email: ""
 });	
 	}, false);
 	  </script>
