@@ -539,7 +539,13 @@
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
 
-	
-	  
+<script>
+	document.getElementById('get_app').addEventListener('click',function(){
+	analytics.track("User Registered", {
+  plan: "Pro Annual",
+  accountType: "Facebook"
+});	
+	}, false);
+	  </script>
 </body>
 </html>
