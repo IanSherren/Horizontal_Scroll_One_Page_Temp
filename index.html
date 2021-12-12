@@ -557,5 +557,25 @@
 	}, false);
 	  </script>
 	  
+<script>
+	document.getElementById('purchase_planet').addEventListener('click',function(){
+	analytics.track("Button Clicked", {
+  label: "purchase",
+  pricing_option: "Planet",
+  price: "$6"
+});	
+	}, false);
+	  </script>
+
+<script>
+	document.getElementById('purchase_galaxy').addEventListener('click',function(){
+	analytics.track("Button Clicked", {
+  label: "purchase",
+  pricing_option: "Galaxy",
+  price: "$24"
+});	
+	}, false);
+	  </script>
+	  
 </body>
 </html>
