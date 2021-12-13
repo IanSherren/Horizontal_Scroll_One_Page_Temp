@@ -33,6 +33,14 @@
   }}();
 
 </script>
+	
+<script>
+	document.getElementById('slide1').addEventListener('load',function(){
+	analytics.track("Slide View", {
+  Slide: "1"
+});	
+	}, false);
+	  </script>
  
 </head>
 <body class="slides horizontal simplifiedMobile animated">
@@ -617,13 +625,7 @@
 	}, false);
 	  </script>
 	  
-<script>
-	document.getElementById('slide1').addEventListener('load',function(){
-	analytics.track("Slide View", {
-  Slide: "1"
-});	
-	}, false);
-	  </script>
+
 	  
 </body>
 </html>
