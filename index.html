@@ -579,7 +579,9 @@
 	  
 <script>
 	document.getElementById('submit_email_form').addEventListener('submit',function(){
-	analytics.identify("Form Submitted");	
+	analytics.identify("Form Submitted",{
+  email: email		
+	});	
 	}, false);
 	  </script>
 	  
