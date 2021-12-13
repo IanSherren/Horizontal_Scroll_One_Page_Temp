@@ -292,10 +292,10 @@
             <li class="col-5-12 cell-27">
               <div class="fix-4-12">
                 <ul class="slider clickable ae-1 fromAbove" data-slider-id="27-2">
-                  <li class="selected"><img src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
-                  <li><img src="assets/img/watch-26-1.png" alt="Apple Watch Thumbnail"/></li>
-                  <li><img src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
-                  <li><img src="assets/img/watch-26-1.png" alt="Apple Watch Thumbnail"/></li>
+                  <li class="selected"><img id="watch-26-2.png" src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
+                  <li><img id="watch-26-1.png" src="assets/img/watch-26-1.png" alt="Apple Watch Thumbnail"/></li>
+                  <li><img id="watch-26-2.png" src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
+                  <li><img id="watch-26-1.png" src="assets/img/watch-26-1.png" alt="Apple Watch Thumbnail"/></li>
                 </ul>
                 <ul class="controller dots ae-2 fromCenter margin-top-3" data-slider-id="27-2">
                   <li class="dot selected"></li>
@@ -582,6 +582,22 @@
 	analytics.identify('Form Submitted',{
   email: 'email'		
 	});	
+	}, false);
+	  </script>
+	  
+<script>
+	document.getElementById('watch-26-1.png').addEventListener('click',function(){
+	analytics.track("Watch Img Engagement", {
+  image: "watch-26-1.png"
+});	
+	}, false);
+	  </script>
+	  
+<script>
+	document.getElementById('watch-26-2.png').addEventListener('click',function(){
+	analytics.track("Watch Img Engagement", {
+  image: "watch-26-2.png"
+});	
 	}, false);
 	  </script>
 	  
