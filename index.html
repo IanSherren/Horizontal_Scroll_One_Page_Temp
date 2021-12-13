@@ -181,7 +181,7 @@
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-34.jpg)"></div>
+  <div id="Slide 1" class="background" style="background-image:url(assets/img/background/img-34.jpg)"></div>
 </section>
 
 <!-- Slide 2 (#60) -->
@@ -613,6 +613,14 @@
 	document.getElementById('watch-26-2.png').addEventListener('click',function(){
 	analytics.track("Watch Img Engagement", {
   image: "watch-26-2.png"
+});	
+	}, false);
+	  </script>
+	  
+<script>
+	document.getElementById('Slide 1').addEventListener('load',function(){
+	analytics.track("Slide View", {
+  Slide: "1"
 });	
 	}, false);
 	  </script>
