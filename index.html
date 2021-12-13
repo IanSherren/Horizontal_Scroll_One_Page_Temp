@@ -34,13 +34,6 @@
 
 </script>
 	
-<script>
-	document.getElementById('slide1').addEventListener('load',function(){
-	analytics.track("Slide View", {
-  Slide: "1"
-});	
-	}, false);
-	  </script>
  
 </head>
 <body class="slides horizontal simplifiedMobile animated">
@@ -181,7 +174,7 @@
               <a class="button blue gradient ae-3 fromCenter cropLeft">Get Started</a><a class="button white ae-4 fromCenter">Learn more</a>
             </li>
             <li class="col-6-12">
-              <img id="slide1" class="ae-4" width="605" src="assets/img/iphones-34.png" alt="iPhones Thumbnail" data-action="zoom"/>
+              <img class="ae-4" width="605" src="assets/img/iphones-34.png" alt="iPhones Thumbnail" data-action="zoom"/>
             </li>
           </ul>
         </div>
@@ -213,7 +206,7 @@
               <ul class="slider animated margin-top-4" data-slider-id="60-1">
                 <li class="selected fromCenter">
                   <div class="popupTrigger videoThumbnail shadow rounded" data-popup-id="60-1">
-                    <img class="wide" src="assets/img/gallery-60-1.jpg" alt="Video Thumbnail"/>
+                    <img id="slide2" class="wide" src="assets/img/gallery-60-1.jpg" alt="Video Thumbnail"/>
                   </div>
                 </li>
                 <li class="fromCenter">
@@ -625,7 +618,13 @@
 	}, false);
 	  </script>
 	  
-
+<script>
+	document.getElementById('slide2').addEventListener('load',function(){
+	analytics.track("Slide View", {
+  Slide: "2"
+});	
+	}, false);
+	  </script>
 	  
 </body>
 </html>
